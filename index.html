@@ -10,26 +10,126 @@
 <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#facebook"></use>
-        </svg>
-    </a>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#twitter"></use>
-        </svg>
-    </a>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#instagram"></use>
-        </svg>
-    </a>
+    <div class="wrapper">
+        <section class="home">
+            <img class="bg" src="img/header-bg.jpg" alt="">
+            <div class="home_container">
+                <div class="container">
+                    <nav class="head_menu">
+                        <ul class="list">
+                            <li class="item"><a href="#about"></a>О ресторане</li>
+                            <li class="item"><a href="#team"></a>Команда</li>
+                            <li class="item"><a href="#order"></a>Заказать</li>
+                            <li class="logo"><img src="img/EGG 1.png" alt=""></li>
+                            <li class="item"><a href="#menu"></a>Меню</li>
+                            <li class="item"><a href="#events"></a>Мероприятия</li>
+                            <li class="item"><a href="#contacts"></a>Контакты</li>
+                        </ul>
+                    </nav>
+
+                <div class="info-block">
+                    <div class="work-time">
+                        <div class="date"><h6>Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</h6></div>
+                    </div>
+
+                    <div class="main_block">
+                        <h5>Ресторан</h5>
+                        <h1>GOLDEN EGG</h1>
+                        <div class="btns">
+                            <a href="#order">Заказать столик</a>
+                            <a href="#about">О ресторане</a>
+                        </div>
+                        <div class="down_btn">
+                            <a href="#about">
+                                <svg>
+                                    <use xlink:href="img/sprite-icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="text">
+                    <h2>О ресторане</h2>
+                    <p>
+                        Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер и, самое главное, богатейший выбор вкуснейших блюд отменного качества – именно эти характеристики привлекают гостей в наш ресторан
+                    </p>
+                    <p>
+                        Официанты этого заведения знают все тонкости приготовления блюд, они подскажут гостям наиболее подходящие для них яства. Тут хорошо знают постоянных клиентов, умело угождая их вкусам.
+                    </p>
+                    <p>
+                        Идеально дополняет ресторан уютная кофейня, находящаяся на первом этаже. Чашечка изумительного кофе и сладости от местного кондитера зарядят вас бодростью и позитивной энергией.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/about-img.jpg" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <img class="bg" src="img/specialty's-bg.jpg" alt="">
+            <div class="container">
+                <h4>Наша команда</h4>
+                <div class="text">
+                    <h2>Шеф-повар</h2>
+                    <p>
+                        За подбор продуктов и приготовление вкусных блюд отвечает наш высококвалифицированный шеф-повар. Блюда в его исполнении превращаются в настоящие шедевры. Никто не останется равнодушным к такому непревзойденному сочетанию.
+                    </p>
+                    <p>
+                        Своей работой мы хотим радовать каждого нашего посетителя. Мы гарантируем всем клиентам, что время, проведенное в нашем заведении, будет отличаться особым теплом и изысканным вкусом.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="img/team-img.jpg" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <!-- <div class="form">
+                    <h2>Заказать столик</h2>
+                    <input type="name" name="name" id="name" placeholder="Имя">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="phone" name="phone" id="phone" placeholder="Телефон">
+                </div> -->
+                <div class="img">
+                    <img src="img/reserved-img.png" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
 
 
+    </div>
 
-
-    
     <script src="/js/swiper-bundle.min.js"></script>
 </body>
 </html>
