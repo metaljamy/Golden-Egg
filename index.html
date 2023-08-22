@@ -122,8 +122,8 @@
                         <input type="name" name="name" id="name" placeholder="Имя" required>
                         <input type="email" name="email" id="email" placeholder="Email">
                         <input type="phone" name="phone" id="phone" placeholder="Телефон" required>
-                        <div class="select">
-                            <select>
+                        <div class="quantity">
+                            <select required>
                                 <option value="">Кол-во людей</option>
                                 <option value="1">1</option>
                                 <option value="2-3">2-3</option>
@@ -131,8 +131,8 @@
                             </select>
                         </div>
                         <input type="text" placeholder="Дата (дата/месяц)">
-                        <div class="select">
-                            <select>
+                        <div class="time">
+                            <select required>
                                 <option value="">Время</option>
                                 <option value="10:00 - 14:00">10:00 - 14:00</option>
                                 <option value="14:00 - 18:00">14:00 - 18:00</option>
@@ -153,9 +153,77 @@
                 </div>
         </section>
 
+            <!-- Slider main container -->
+        <section class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="bg" src="img/slider-bg.jpg" alt="">
+                        <div class="slide-container">
+                            <h4>сПЕЦ-ПРЕДЛОЖЕНИЯ</h4>
+                            <div class="text">
+                                <h2>Шеф-повар</h2>
+                                <p>
+                                    Невероятно красивый десерт Пирожное "Golden Egg". 3D пирожное в форме яйца в гнёздышке.
+                                </p>
+                                <p>
+                                    Узнать, каково золото на вкус, приглашаем в наш ресторан. Темный бельгийский шоколад, Амаретто, мусс мята-лемонграсс, центр морковь-маракуйя — удержаться почти невозможно.
+                                </p>
+                            </div>
+                            <div class="img">
+                                <img src="img/slide_1.jpg" alt="">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="bg" src="img/slider-bg.jpg" alt="">
+                        <div class="slide-container">
+                            <h4>сПЕЦ-ПРЕДЛОЖЕНИЯ</h4>
+                            <div class="text">
+                                <h2>УТИННЫЕ ИСТОРИИ</h2>
+                                <p>
+                                    Утиные ножки здесь маринуют с травами, запекают, а потом тушат, пока мясо не приобретет нежную текстуру.
+                                </p>
+                                <p>
+                                    К утке подают красную капусту, томлёную в красном вине, а также толчёный картофель со шкварками. Фермерскую утиную грудку обжаривают и подают с соусом демиглас и вишнёвым кули, а также с нежным картофельным гратеном, запечённым со сливками, тимьяном и сыром пармезан.
+                                </p>
+                            </div>
+                            <div class="img">
+                                <img src="img/slide_2.jpg" alt="">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="bg" src="img/slider-bg.jpg" alt="">
+                        <div class="slide-container">
+                            <h4>сПЕЦ-ПРЕДЛОЖЕНИЯ</h4>
+                            <div class="text">
+                                <h2>УТИННЫЕ ИСТОРИИ</h2>
+                                <p>
+                                    Утиные ножки здесь маринуют с травами, запекают, а потом тушат, пока мясо не приобретет нежную текстуру.
+                                </p>
+                                <p>
+                                    К утке подают красную капусту, томлёную в красном вине, а также толчёный картофель со шкварками. Фермерскую утиную грудку обжаривают и подают с соусом демиглас и вишнёвым кули, а также с нежным картофельным гратеном, запечённым со сливками, тимьяном и сыром пармезан.
+                                </p>
+                            </div>
+                            <div class="img">
+                                <img src="img/slide_1.jpg" alt="">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+        </section>
+
 
     </div>
 
-    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper_custom.js"></script>
 </body>
 </html>
