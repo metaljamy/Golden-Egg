@@ -1,0 +1,57 @@
+section.VIP_events{
+    display: flex;
+    flex-direction: column;
+    .container{
+        min-height: 675px;
+    }
+    .img_container{
+        display:flex;
+    }
+    .img{
+        display: flex;
+        .circle{
+            right: -15%;
+            position: relative;
+            &:last-of-type{
+                left: -15%;
+            }
+        }
+    }
+    .description{
+        width: 81px;
+        background-color: black;
+        writing-mode: vertical-lr;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:first-child{
+            right: -10%;
+            rotate: 180deg;
+        }
+        &:last-child{
+            left: -10%;
+            }
+        }
+        h5{
+            color: #FFF;
+            font-family: Kurale;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 12px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+    }
+    .order__contacts {
+        z-index: 1;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(251, 248, 248, 0.5);
+        position: relative;
+    bottom: 50px;
+        a{
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }

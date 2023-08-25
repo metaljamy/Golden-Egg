@@ -10,13 +10,20 @@ $gradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.70) 100%);
 // size
 $wrap: 1440px;
 $mc: 0 auto;
-$container: 1275px;
+$container: 1200px;
+
+@mixin flex( $jc,$ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+
+}
 
 
 body{
     font-family: $open_sans;
     .wrapper{
-        min-width: 1470px;
+        min-width: $wrap;
         margin: $mc;
     }
 
@@ -29,7 +36,8 @@ body{
 
     .home,
     .team, 
-    .offer{
+    .offer,
+    .VIP_events{
         position: relative;
         .bg{
             width: 100%;
@@ -49,7 +57,8 @@ body{
     .about,
     .team, 
     .offer,
-    .order{
+    .order,
+    .VIP_events{
         min-height: 675px;
         .container{
             justify-content: center;
@@ -64,7 +73,8 @@ body{
 
     .about,
     .team,
-    .order{
+    .order,
+    .VIP_events{
         .text{
             width: 50%;
             text-align: center;
@@ -82,8 +92,19 @@ body{
                 border-radius: 50%;
                 position: absolute;
                 top: 20%;
-                right: -10%;
             }
+        }
+    }
+
+    .about,
+    .order{
+        .circle{
+            right: -18%;
+        }
+    }
+    .team{
+        .circle{
+            left: -18%;
         }
     }
 
@@ -94,9 +115,6 @@ body{
             &:nth-of-type(odd){
                 p,h2{
                     color: $secondary-color;
-                }
-                .circle{
-                    left: -10%;
                 }
             }
     }
@@ -133,7 +151,8 @@ body{
     }
 
     h4{
-        top: 50px;
+        width: 100%;
+        top: 45px;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 6px;
@@ -141,11 +160,13 @@ body{
         text-align: center;
         text-transform: uppercase;
         position: absolute;
+        z-index: 2;
     }
 
     a, li{
         color: $secondary-color;
         text-decoration: none;
+        text-transform: uppercase;
         &:hover{
             transition: 0.3s;
         }

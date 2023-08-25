@@ -20,9 +20,12 @@ section.home{
                         border-top: 5px solid transparent;
                         cursor: pointer;
                         &:hover{
-                            color: $primary-color;
                             border-top: 5px solid $primary-color;
+                            a{
+                                color: $primary-color;;
+                            }
                         }
+
                 }
                     &.logo{
                         padding: 16px 70px 0;
